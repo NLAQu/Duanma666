@@ -1,0 +1,21 @@
+# CURSOR RULES - WEEK 1 MVP SCOPE
+
+## 1. MỤC TIÊU TUẦN 1
+- Chỉ xây dựng phiên bản Web TMĐT CƠ BẢN nhất để DEPLOY LÊN INTERNET (Vercel + Render/Supabase).
+- TUYỆT ĐỐI KHÔNG làm các tính năng AI/Nâng cao trong tuần này (Bỏ qua: Virtual Try-on, Skin Quiz, Smart Sizing, Anti-fraud, Smart Routing).
+
+## 2. STACK CÔNG NGHỆ CHỌN ĐỂ DEPLOY NHANH
+- Frontend: React (Vite) + TailwindCSS (Deploy trên Vercel)
+- Backend: Node.js (Express) hoặc Supabase API (Deploy trên Render hoặc dùng Supabase Cloud)
+- Database: PostgreSQL (Free trên Supabase / Neon.tech)
+
+## 3. CÁC CHỨC NĂNG BẮT BUỘC TRONG CODE TUẦN 1
+- Auth: Đăng ký, Đăng nhập (Lưu JWT/Session).
+- Product: Xem danh sách sản phẩm, xem chi tiết 1 sản phẩm.
+- Cart: Thêm vào giỏ, sửa số lượng, xóa khỏi giỏ.
+- Checkout: Form đặt hàng cơ bản (Lưu đơn hàng vào DB với trạng thái "Pending").
+- Seller/Admin Basic: Trang quản lý đơn giản để thêm/xóa/sửa sản phẩm.
+
+## 4. QUY TẮC VIẾT CODE
+- Luôn sử dụng biến môi trường `process.env.VITE_API_URL` hoặc `process.env.DATABASE_URL` để dễ cấu hình trên Cloud.
+- Code đơn giản, chuẩn RESTful API, có xử lý lỗi (CORS, 404, 500) để không bị crash khi deploy.

@@ -1,0 +1,3 @@
+# assets/
+
+Images, Styles, Fonts.
